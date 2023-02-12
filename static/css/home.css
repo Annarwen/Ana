@@ -1,0 +1,419 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+
+}
+
+/* general container */
+.nav-container {
+    width: 100%;
+    height: 12vh;
+
+    /*background-color: aqua;*/
+
+    display: flex;
+    flex-direction: row;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* logo section */
+.logo-section {
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.logo-section h1 {
+    display: inline-block;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    color: #000;
+}
+
+.logo-section h1 a .shop {
+    display: inline-block;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+/* navbar section */
+.nav-section {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 50px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+  
+.nav-item a {
+    display: block;
+    color: #3D3D3D;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  
+.nav-item a:hover {
+    text-decoration: underline;
+    color: #0052CC;
+    transition: 0.5s;
+}
+
+/* user section */
+.user-section {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    margin-right: 50px;
+}
+
+.user-section img {
+    width: 30px;
+    height: 30px;
+    margin-right: 36px;
+
+    cursor: pointer;
+}
+
+
+/* SEARCH CONTAINER */
+.search-container {
+    width: 100%;
+    height: 7vh;
+    background-color: #0052CC;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-left: 52px;
+    
+}
+
+/* category section */
+.category-section {
+    width: 33%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.hamburger {
+    margin-right: 17px;
+
+    cursor: pointer;
+}
+
+.hamburger .line {
+    display: block;
+    height: 3px;
+    background-color: #FFFFFF;
+    margin: 8px 0;
+    width: 30px;
+}
+
+.categories-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+/* search-section */
+.search-section {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.search-section input {
+    position: absolute;
+    width: 389px;
+    height: 40px;
+
+    border-radius: 6px;
+
+    padding-left: 48px;
+}
+
+.search-section input::placeholder {    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.search-section img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+
+    margin-left: 14px;
+
+    cursor: pointer;
+}
+
+/* PRODUCT CONTAINER */
+.product-container {
+    width: 100%;
+    height: 55vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 88px;
+}
+
+.heading-section h3 {
+    width: 250px;
+    height: 30px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #000000;
+}
+
+.products-section {
+    width: 100%;
+    height: 100%;
+
+    padding-top: 93px;
+    padding-left: 134px;
+    padding-right: 134px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.phone-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-section img {
+    transition: transform 0.5s ease;
+    cursor: pointer;
+
+}
+
+.phone-section img:hover {
+    transform: scaleX(-1);
+
+}
+
+.phone-section .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.general-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.general-info .brand-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+    margin-right: 87px;
+}
+
+.general-info .price {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #373737;
+}
+
+.general-info .price.discount {
+    display: flex;
+    flex-direction: row;
+    margin-left: 17px;
+}
+
+.general-info .price.discount p {
+    color: #BD6161;
+    text-decoration: line-through;
+}
+
+.additional-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.additional-info .added {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6A6A6A;
+
+    margin-right: 102px;
+}
+
+.additional-info .see-more {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+
+    cursor: pointer;
+}
+
+
+/* GENERAL FOOTER */
+.footer-container {
+    width: 100%;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-left: 83px;
+
+    background-color: #0052CC;
+}
+
+
+.social-section {
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+    
+    padding-top: 44px;
+    padding-bottom: 44px;
+}
+
+.social-section .logo-section h3 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.social-section .social-links img {
+    margin-right: 17px;
+}
+
+/* footer links */
+.links-section {
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+
+    margin-top: 50px;
+}
+
+.links-section .links-column {
+    display: flex;
+    align-items: top;
+
+    margin-right: 88px;
+}
+
+.links-section .links-column li {
+    list-style-type: none;
+}
+
+.links-section .links-column li a{
+    text-decoration: none;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
